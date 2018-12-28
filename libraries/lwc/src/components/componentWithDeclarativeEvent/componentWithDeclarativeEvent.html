@@ -1,0 +1,16 @@
+<template>
+    <div>
+        <div class="lowercase">{lowercaseHandled}</div>
+        <div class="kebab">{kebabHandled}</div>
+        <div class="camel">{camelHandled}</div>
+        <div class="caps">{capsHandled}</div>
+        <div class="pascal">{pascalHandled}</div>
+        <ce-with-event
+            onlowercaseevent={handleLowercaseEvent}
+            onkebab-event={handleKebabEvent}
+            oncamelEvent={handleCamelEvent}
+            onCAPSevent={handleCapsEvent}
+            onPascalEvent={handlePascalEvent}
+        ></ce-with-event>
+    </div>
+</template>

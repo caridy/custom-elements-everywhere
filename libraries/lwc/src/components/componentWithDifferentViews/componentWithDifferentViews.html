@@ -1,0 +1,8 @@
+<template>
+    <template if:true={showWC}>
+        <ce-with-children></ce-with-children>
+    </template>
+    <template if:false={showWC}>
+        <div class="dummy">Dummy view</div>
+    </template>
+</template>
